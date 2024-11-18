@@ -34,7 +34,7 @@ public class FindElementTests {
         System.out.println(element.getText());
 
         WebElement element1 = driver.findElement(By.tagName("a"));
-        System.out.println(element1.getText());// no text
+        System.out.println(element1.getText());
 
         List<WebElement> elements = driver.findElements(By.tagName("a"));
         System.out.println(elements.size());
