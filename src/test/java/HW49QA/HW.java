@@ -43,10 +43,10 @@ public class HW {
         driver.findElement(By.cssSelector(".search-box-button"));
         driver.findElement(By.cssSelector(".ico-login"));
         driver.findElement(By.cssSelector(".ico-register"));
-        driver.findElement(By.cssSelector("a"));
         driver.findElement(By.cssSelector("[href='/register']"));
         driver.findElement(By.cssSelector("[href*='digital']"));
         driver.findElement(By.cssSelector("[href^='/electro']"));
+        driver.findElement(By.cssSelector("[href$='shoes']"));
 
     }
 
