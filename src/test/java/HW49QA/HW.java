@@ -49,5 +49,25 @@ public class HW {
         driver.findElement(By.cssSelector("[href$='shoes']"));
 
     }
+    @Test
+    public void findElementByXpath() {
+        driver.findElement(By.xpath("//input[@id='small-searchterms']"));
+        driver.findElement(By.xpath("//a"));
+        driver.findElement(By.xpath("//div[@class='header-logo']"));
+        driver.findElement(By.xpath("//div[@class='header-menu']"));
+        driver.findElement(By.xpath("//div[@class='header-links-wrapper']"));
+        driver.findElement(By.xpath("//div[@class='header-links']"));
+        driver.findElement(By.xpath("//a[@href='/jewelry']"));
+        driver.findElement(By.xpath("//a[@href='/digital-downloads']"));
+        driver.findElement(By.xpath("//a[@href='/apparel-shoes']"));
+        driver.findElement(By.xpath("//a[@href='/electronics']"));
+        driver.findElement(By.xpath("//input[@value='Search']"));
+        driver.findElement(By.xpath("//a/.."));
+        driver.findElement(By.xpath("//a/parent::*"));
+        driver.findElement(By.xpath("//a/parent::div"));
+        driver.findElement(By.xpath("//a[contains(.,'Log')]"));
+
+
+    }
 
 }
