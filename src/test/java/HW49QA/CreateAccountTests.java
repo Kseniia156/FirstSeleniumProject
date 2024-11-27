@@ -9,13 +9,22 @@ public class CreateAccountTests extends TestBase {
     public void testRegisterNewUser() {
         click(By.linkText("Register"));
 
-        type(By.id("FirstName"), "Andy");
-        type(By.id("LastName"), "Murray");
-        type(By.id("Email"), "murray@gmail.com");
-        type(By.id("Password"), "Aqwer123");
-        type(By.id("ConfirmPassword"), "Aqwer123");
+        RegistrationData data = new RegistrationData();
+
+        data.setFirstName("Andy");
+        data.setLastName("Murray");
+        data.setEmail("murray@gmail.com");
+        data.setPassword("Aqwer123");
+        data.setConfirmPassword("Aqwer123");
 
         click(By.id("register-button"));
 
-        }
+        type(By.id("FirstName"), data.getFirstName());
+        type(By.id("LastName"), data.getLastName());
+        type(By.id("Email"), data.getEmail());
+        type(By.id("Password"), data.getPassword());
+        type(By.id("ConfirmPassword"), data.getConfirmPassword());
+
+
+    }
 }
